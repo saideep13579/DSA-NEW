@@ -14,6 +14,7 @@ void subsequence(string s, int idx, string result, vector<string> &li){
     subsequence(s, idx+1, result , li); // here don't get picked then do nothing
 }
 
+
 int main(){
     string s = "abc";
     string result="";

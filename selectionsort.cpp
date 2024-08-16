@@ -7,7 +7,7 @@ void selection_sort(vector<int> &v){
     // here we just need index of min element in unsorted vect then we just place it to begining of unsorted.
     // here we are virtualy making two vect sorted and unsorted 
     // just traverse through this loop you will get it........
-    
+
     for(int i=0; i<v.size(); i++){
         int min_idx =i;
         for(int j=i+1; j<v.size(); j++){
@@ -15,7 +15,7 @@ void selection_sort(vector<int> &v){
                 min_idx = j;
             }
         }
-        swap(v[i],v[min_idx]);
+        if(min_idx != i) swap(v[i],v[min_idx]);
     }
 }
 

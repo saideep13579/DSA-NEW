@@ -15,6 +15,8 @@ int firstoccurance(vector<int> &vec, int low , int high, int target){
             for(int i =1; i <= mid; i++){
                 if(vec[mid -i] != target) return mid-i+1;
             }
+            // i think we don't need to put for loop here 
+            //if we just make here high = mid-1 and repeat it then also it we find target 1st occurance.
         }
         if(vec[mid] < target){
             low = mid+1;

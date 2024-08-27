@@ -1,6 +1,9 @@
 #include<iostream>
 using namespace std;
 
+// here we neeed to find the peak element in array
+// so i just do compare the mid , mid+1 and mid-1 for finding peak element
+
 int peak_element(int arr[], int low , int high){
     while(low <= high){
         int mid = low + (high-low)/2;
